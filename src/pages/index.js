@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-02-14 22:11:10
+ * @LastEditTime: 2021-02-23 14:55:20
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /mesonDoc/src/pages/index.js
+ */
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
@@ -8,32 +16,29 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Miner[Terminal]',
+    imageUrl: 'img/sales.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Provide services by accessing the network according to standards and obtain tokens
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Client',
+    imageUrl: 'img/research.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Use Meson to accelerate your application and protect it from malicious attacks from the Internet
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Cooperation',
+    imageUrl: 'img/marketing.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Reasonable business model to reach more terminal nodes through Meson
       </>
     ),
   },
@@ -45,11 +50,11 @@ function Feature({imageUrl, title, description}) {
     <div className={clsx('col col--4', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+          <img className={styles.featureImage} src={imgUrl} alt={title} style={{width:"50%"}}/>
         </div>
       )}
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <h3 style={{textAlign:'center'}}>{title}</h3>
+      <p style={{textAlign:'center'}}>{description}</p>
     </div>
   );
 }

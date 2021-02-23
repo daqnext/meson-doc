@@ -40,10 +40,10 @@ module.exports = {
               label: 'User Guide',
               to: 'docs/',
             },
-            {
-              label: 'White Paper',
-              to: 'docs/White Paper',
-            },
+            // {
+            //   label: 'White Paper',
+            //   to: 'docs/White Paper',
+            // },
           ],
         },
         {
@@ -102,7 +102,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/daqnext/meson-doc/edit/main/',
         },
         // blog: {
         //   showReadingTime: true,
