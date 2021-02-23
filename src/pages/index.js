@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-14 22:11:10
- * @LastEditTime: 2021-02-23 14:55:20
+ * @LastEditTime: 2021-02-23 20:13:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /mesonDoc/src/pages/index.js
@@ -68,8 +68,8 @@ function Home() {
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <h1 className="hero__title" style={{color:"white"}}>{siteConfig.title}</h1>
+          <p className="hero__subtitle" style={{color:"white"}}>{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
               className={clsx(
