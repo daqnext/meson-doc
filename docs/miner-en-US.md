@@ -1,7 +1,7 @@
 ---
-id: Miner Guide
-title: Miner Guide
-sidebar_label: Miner Guide
+id: Miner guide
+title: Miner guide
+sidebar_label: Miner guide
 slug: /
 ---
 

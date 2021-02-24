@@ -1,7 +1,7 @@
 ---
-id: CDN User Guide
-title: CDN User Guide
-sidebar_label: CDN User Guide
+id: CDN guide
+title: CDN guide
+sidebar_label: CDN guide
 ---
 
 - [Step1. Register an account and log in](#step1-register-an-account-and-log-in)

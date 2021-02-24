@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-14 22:11:10
- * @LastEditTime: 2021-02-23 20:13:26
+ * @LastEditTime: 2021-02-24 16:53:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /mesonDoc/src/pages/index.js
@@ -59,44 +59,58 @@ function Feature({imageUrl, title, description}) {
   );
 }
 
-function Home() {
-  const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title" style={{color:"white"}}>{siteConfig.title}</h1>
-          <p className="hero__subtitle" style={{color:"white"}}>{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              Get Started
-            </Link>
-          </div>
-        </div>
-      </header>
-      <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-      </main>
-    </Layout>
-  );
+class Home extends React.Component {
+
+  constructor(props) {
+      super(props);
+      // window.location.href="/homepage.html";
+      this.props.history.push("/docs")
+  }
+  render() {
+      return (
+          <div></div>
+      );
+  }
+
+// function Home() {
+  // const context = useDocusaurusContext();
+  // const {siteConfig = {}} = context;
+  // return (
+  //   <Layout
+  //     title={`Hello from ${siteConfig.title}`}
+  //     // description="Description will go into a meta tag in <head />">
+  //     description="meson.network">
+  //     <header className={clsx('hero hero--primary', styles.heroBanner)}>
+  //       <div className="container">
+  //         <h1 className="hero__title" style={{color:"white"}}>{siteConfig.title}</h1>
+  //         <p className="hero__subtitle" style={{color:"white"}}>{siteConfig.tagline}</p>
+  //         <div className={styles.buttons}>
+  //           <Link
+  //             className={clsx(
+  //               'button button--outline button--secondary button--lg',
+  //               styles.getStarted,
+  //             )}
+  //             to={useBaseUrl('docs/')}>
+  //             Get Started
+  //           </Link>
+  //         </div>
+  //       </div>
+  //     </header>
+  //     <main>
+  //       {features && features.length > 0 && (
+  //         <section className={styles.features}>
+  //           <div className="container">
+  //             <div className="row">
+  //               {features.map((props, idx) => (
+  //                 <Feature key={idx} {...props} />
+  //               ))}
+  //             </div>
+  //           </div>
+  //         </section>
+  //       )}
+  //     </main>
+  //   </Layout>
+  // );
 }
 
 export default Home;

@@ -1,7 +1,7 @@
 module.exports = {
   title: 'meson.network',
   tagline: 'the next generation distributed acceleration network.',
-  url: 'https://meson.network',
+  url: 'https://meson.network/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -10,18 +10,18 @@ module.exports = {
   projectName: 'mesonDoc', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'meson.network',
+      title: 'Meson.Network',
       logo: {
         alt: 'meson.network',
         src: 'img/logo.svg',
       },
       items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
+        // {
+        //   to: 'docs/',
+        //   activeBasePath: 'docs',
+        //   label: 'Docs',
+        //   position: 'left',
+        // },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/daqnext',
@@ -37,7 +37,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'User Guide',
+              label: 'Docs',
               to: 'docs/',
             },
             // {
